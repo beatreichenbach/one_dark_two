@@ -1,0 +1,6 @@
+.gradle
+.idea
+.qodana
+build
+src/main/resources/themes
+venv/

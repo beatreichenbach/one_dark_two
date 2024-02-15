@@ -1,0 +1,56 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+  <id>com.github.beatreichenbach.one_dark_two</id>
+  <name>One Dark Two Theme</name>
+  <vendor url="https://github.com/beatreichenbach">Beat Reichenbach</vendor>
+  <description><![CDATA[
+<h2>Fresh Reimagining of the One Dark theme for JetBrains IDEs</h2>
+
+<p>
+One Dark Two is my interpretation of the One Dark theme with more contrast. This repository is based on the code by:
+</p>
+
+<ul>
+  <li><a href="https://github.com/catpuccin/jetbrains">catpuccin/jetbrains</a></li>
+  <li><a href="https://github.com/one-dark/jetbrains-one-dark-theme">one-dark/jetbrains-one-dark-theme</a></li>
+  <li><a href="https://github.com/subtheme-dev/atom-one">subtheme-dev/atom-one</a></li>
+</ul>
+
+<h3>Usage</h3>
+
+<p>There are 2 variants for you to choose from: <strong>Fresh</strong> and <strong>Classic</strong>.</p>
+
+<h4>User Interface</h4>
+
+<ul>
+  <li>Head to <strong>Settings</strong> → <strong>Appearance & Behaviour</strong> → <strong>Appearance</strong></li>
+  <li>Pick your variant</li>
+  <li><strong>(Optional)</strong> Restart your IDE</li>
+</ul>
+
+<h4>Code Editor</h4>
+
+<ul>
+  <li>Head to <strong>Settings</strong> → <strong>Editor</strong> → <strong>Color Scheme</strong></li>
+  <li>Pick your variant</li>
+  <li><strong>(Optional)</strong> Restart your IDE</li>
+</ul>
+
+<h3>Help</h3>
+
+For further help, see also:
+
+<ul>
+  <li><a href="https://github.com/beatreichenbach/one_dark_two" target="_blank">GitHub Repository</a></li>
+</ul>
+
+<p>LICENSE: <a href="https://github.com/beatreichenbach/one_dark/blob/main/LICENSE">MIT</a></p>
+]]></description>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="com.github.beatreichenbach.one_dark.fresh" path="/themes/fresh.theme.json"/>
+    <themeProvider id="com.github.beatreichenbach.one_dark.classic" path="/themes/classic.theme.json"/>
+    <bundledColorScheme id="com.github.beatreichenbach.one_dark.fresh" path="/themes/fresh"/>
+    <bundledColorScheme id="com.github.beatreichenbach.one_dark.classic" path="/themes/classic"/>
+  </extensions>
+</idea-plugin>
