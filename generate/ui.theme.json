@@ -308,9 +308,9 @@
         "inactiveBackground": "panelBackground"
       },
       "background": "secondaryPanelBackground",
-      "borderColor": "separatorColor",
+      "borderColor": "borderColor",
       "borderWidth": 1,
-      "inactiveBorderColor": "separatorColor",
+      "inactiveBorderColor": "borderColor",
       "paintBorder": true
     },
     "PopupMenu": {

@@ -49,7 +49,7 @@ def main() -> None:
             'parent_scheme': 'Darcula',
             'opacity': partial(mix, values['base']),
             'mix': mix,
-            'italics': False,
+            'italics': True,
 
             'accentColor': values['primary'],
             'secondaryAccentColor': values['secondary'],
@@ -63,7 +63,7 @@ def main() -> None:
             'selectionForeground': values['subtext1'],
             'selectionBackground': values['surface0'],
             'selectionInactiveBackground': values['base'],
-            'borderColor': values['base'],
+            'borderColor': values['mantle'],
             'separatorColor': values['base'],
         }
         variables.update(values)
