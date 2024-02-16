@@ -22,3 +22,8 @@ Re-generate the variants and run the plugin in an IDE:
 ```shell
 ./venv/bin/python3 generate/generate.py && ./gradlew runIde
 ```
+
+Clean re-build
+```shell
+rm -rf build && ./venv/bin/python3 generate/generate.py && ./gradlew build
+```
