@@ -1,5 +1,7 @@
 # Contributing
 
+## Python
+
 Create a virtual environment for python and install the dependencies:
 ```shell
 python3 -m venv venv
@@ -11,6 +13,13 @@ python3 -m pip install -r generate/requirements.txt
 Generate the variants:
 ```shell
 ./venv/bin/python3 generate/generate.py
+```
+
+## Gradle
+
+Add gradlew:
+```shell
+gradle wrapper --gradle-version 8.10.2 --distribution-type bin
 ```
 
 Build the plugin:
